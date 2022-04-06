@@ -5,7 +5,7 @@ from search_pool_maker_ingredients import *
 filename = 'foods'
 
 def title_spliter_foods(title, brand):
-    'Returns an array with a search pool for each dictionary'
+    #'Returns an array with a search pool for each dictionary'
     secuence = []
     brand_secuence = []
     i = 0
@@ -23,7 +23,7 @@ def title_spliter_foods(title, brand):
     return list(dict.fromkeys(secuence)) 
 
 def get_search_pool(data):
-    'Returns new data with a search pool for each dictionary'
+    #'Returns new data with a search pool for each dictionary'
     new_data = []
     for elem in data:
         search_key_words = title_spliter_foods(elem['title'], elem['brand'])
